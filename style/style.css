@@ -649,6 +649,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     left: 0;
+    height: 230px;
 }
 .title-stack {
     text-align: center;
@@ -690,6 +691,20 @@ body {
     to {
         transform: translateX(-100%);
     }
+}
+.focus-business {
+    text-align: center;
+    margin-top: 18rem;
+}
+.title-business {
+    font-size: clamp(1.5rem, 0.955rem + 2.727vw, 3rem);
+    font-weight: 700;
+    padding: 2rem 1rem;
+}
+.text-business{
+    line-height: 3rem;
+    padding-inline: 1rem;
+    font-size: clamp(1rem, 0.955rem + 0.227vw, 1.125rem);
 }
 
 .none {
@@ -821,5 +836,9 @@ body {
 
     .button-cv {
         order: 3;
+    }
+    .text-business {
+        line-height: 5rem;
+        padding-inline: 10rem ;
     }
 }
