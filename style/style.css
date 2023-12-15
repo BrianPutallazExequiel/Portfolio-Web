@@ -760,11 +760,27 @@ body {
     font-size: clamp(1.5rem, 0.955rem + 2.727vw, 3rem);
     font-weight: 700;
     text-align: center;
+    margin-bottom: 1rem;
 }
 .proyects img {
     display: block;
     margin-inline: auto;
     width: 20rem;
+    margin-bottom: 2rem;
+}
+.skills-details {
+    padding-inline: 1rem;
+    margin-bottom: 2rem;
+}
+.skills-details h4 {
+    font-size: clamp(1.25rem, 1.159rem + 0.455vw, 1.5rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.skills-details p {
+    text-align: center;
+    padding-block: .5rem;
 }
 .none {
     display: none;
