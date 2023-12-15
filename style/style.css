@@ -752,6 +752,9 @@ body {
     width: 12rem;
     margin-top: 3rem;
 }
+
+/* Proyects */
+
 .proyects {
     width: 100%;
     margin-top: 90rem;
@@ -762,7 +765,7 @@ body {
     text-align: center;
     margin-bottom: 1rem;
 }
-.proyects img {
+.proyect-img {
     display: block;
     margin-inline: auto;
     width: 20rem;
@@ -772,15 +775,55 @@ body {
     padding-inline: 1rem;
     margin-bottom: 2rem;
 }
-.skills-details h4 {
-    font-size: clamp(1.25rem, 1.159rem + 0.455vw, 1.5rem);
+.proyects-h4 {
+    font-size: clamp(1.25rem, 0.977rem + 1.364vw, 2rem);
     font-weight: 700;
     text-align: center;
     margin-bottom: 2rem;
 }
-.skills-details p {
+.proyects-para {
     text-align: center;
     padding-block: .5rem;
+}
+.proyects-para:nth-child(4) {
+    padding-bottom: 3rem;
+}
+.proyects-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.btn {
+	background-image: var(--gradient-text);
+	border-radius: .4rem;
+	color: var(--color-violet);
+	height: 2.7rem;
+	letter-spacing: 1px;
+	padding: 2px;
+	position: relative;
+    text-decoration: none;
+	width: 7.5rem;
+	z-index: 2;
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+.btn span {
+	align-items: center;
+	background: var(--color-white);
+	border-radius: .4rem;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	transition: background .5s ease;
+	width: 100%;
+}
+
+.btn:hover span {
+	background: transparent;
 }
 .none {
     display: none;
@@ -930,4 +973,36 @@ body {
         justify-content: space-evenly;
         margin-bottom: 4rem;
     }
+    .proyects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 65rem;
+        
+    }
+    .proyects-title {
+        margin-bottom: 8rem;
+    }
+    .container-proyect {
+        display: flex;
+        margin-bottom: 10rem;
+    }
+    .proyect-img {
+        width: 30rem;
+        margin-right: 10rem;
+    }
+    .proyects-h4 {
+        text-align: start;
+    }
+    .proyects-para:nth-child(4) {
+        padding-bottom: 6rem;
+    }
+    .proyects-buttons {
+        justify-content: flex-start;
+    }
+    .btn {
+        order: 5;
+    }
+
 }
