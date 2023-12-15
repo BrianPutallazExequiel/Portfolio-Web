@@ -671,7 +671,7 @@ body {
 
 .logos-slide {
     display: inline-block;
-    animation: 10s slide infinite linear;
+    animation: 20s slide infinite linear;
     
 }
 
@@ -706,7 +706,66 @@ body {
     padding-inline: 1rem;
     font-size: clamp(1rem, 0.955rem + 0.227vw, 1.125rem);
 }
-
+.skills {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    background-color: #dfdfdf;
+    padding-bottom: 2rem;
+}
+.title-skills{
+    font-size: clamp(1.5rem, 0.955rem + 2.727vw, 3rem);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+}
+.skill-1 {
+    margin-top: 4rem;
+    margin-inline: auto;
+    width: 20rem;
+    border: 1px solid #851BD9;
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    background-color: var(--color-white);
+}
+.skill-1 img {
+    display: block;
+    width: 10rem;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+.skill-1 h4 {
+    text-align: center;
+    font-size: clamp(1.25rem, 1.159rem + 0.455vw, 1.5rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.skill-1 p {
+    text-align: center;
+}
+.cta-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    width: 12rem;
+    margin-top: 3rem;
+}
+.proyects {
+    width: 100%;
+    margin-top: 90rem;
+}
+.proyects-title {
+    font-size: clamp(1.5rem, 0.955rem + 2.727vw, 3rem);
+    font-weight: 700;
+    text-align: center;
+}
+.proyects img {
+    display: block;
+    margin-inline: auto;
+    width: 20rem;
+}
 .none {
     display: none;
 }
@@ -840,5 +899,19 @@ body {
     .text-business {
         line-height: 5rem;
         padding-inline: 10rem ;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .title-skills {
+        margin-bottom: 8rem;
+    }
+    .container-skills {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 4rem;
     }
 }
